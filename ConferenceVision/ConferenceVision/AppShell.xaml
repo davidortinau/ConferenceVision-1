@@ -30,16 +30,16 @@
     </Shell.FlyoutHeaderTemplate>
 
 
-    <FlyoutItem Title="Home" Style="{StaticResource BaseStyle}">
+    <FlyoutItem Title="Home" Route="home" Style="{StaticResource BaseStyle}">
         <ShellContent ContentTemplate="{DataTemplate views:HomeView}" />
     </FlyoutItem>
-    <FlyoutItem Title="Achievements" Style="{StaticResource BaseStyle}">
+    <FlyoutItem Title="Achievements" Route="achievements" Style="{StaticResource BaseStyle}">
         <ShellContent ContentTemplate="{DataTemplate views:AchievementsView}" />
     </FlyoutItem>
-    <FlyoutItem Title="My Profile" Style="{StaticResource BaseStyle}">
+    <FlyoutItem Title="My Profile" Route="profile" Style="{StaticResource BaseStyle}">
         <ShellContent ContentTemplate="{DataTemplate views:UserProfileView}" />
     </FlyoutItem>
-    <FlyoutItem Title="About" Style="{StaticResource BaseStyle}">
+    <FlyoutItem Title="About" Route="about" Style="{StaticResource BaseStyle}">
         <ShellContent ContentTemplate="{DataTemplate views:AboutView}" />
     </FlyoutItem>
 

@@ -57,7 +57,7 @@ namespace ConferenceVision.Views.Renderers
 				}
 				else
 				{
-					await Navigation.PushModalAsync(new HomeworkView() { MarkdownFile = Url }, true);
+					await Shell.Current.GoToAsync($"//about/homework?content={Url}&sender=about");
 				}
 			}
 		}

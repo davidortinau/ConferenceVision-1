@@ -9,6 +9,8 @@ using Xamarin.Forms;
 
 namespace ConferenceVision.Views
 {
+	[QueryProperty(nameof(MarkdownFile), "content")]
+	[QueryProperty(nameof(BackLocation), "sender")]
 	public partial class HomeworkView : ContentPage, INotifyPropertyChanged
 	{
 		public HomeworkView()
@@ -38,6 +40,11 @@ namespace ConferenceVision.Views
 			}
 		}
 
+		public string BackLocation
+		{
+			get;set;
+		}
+
 		string GetText(string filename)
 		{
 			var assembly = IntrospectionExtensions.GetTypeInfo(typeof(HomeworkView)).Assembly;
@@ -53,7 +60,7 @@ namespace ConferenceVision.Views
 
 		async void OnCloseAsync(object sender, EventArgs e)
 		{
-			await Navigation.PopModalAsync(true);
+			await Shell.Current.GoToAsync($"//{BackLocation}");
 		}
 
 		public event PropertyChangedEventHandler PropertyChanged;

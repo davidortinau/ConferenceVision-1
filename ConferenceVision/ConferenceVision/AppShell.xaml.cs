@@ -17,6 +17,7 @@ namespace ConferenceVision
         private void InitRoutes()
         {
             Routing.RegisterRoute("details", typeof(ImageDetailView));
+            Routing.RegisterRoute("homework", typeof(HomeworkView));
         }
 
         async void DisplayQRShareCode(object sender, System.EventArgs e)

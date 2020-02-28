@@ -115,7 +115,7 @@ namespace ConferenceVision.Views
 
 		async void GoToXamarinBooth(object sender, System.EventArgs e)
 		{
-			await Navigation.PushModalAsync(new HomeworkView() { MarkdownFile = "XamarinBooth.md" }, true);
+			await Shell.Current.GoToAsync("//profile/homework?content=XamarinBooth.md&sender=profile");
 		}
 	}
 }

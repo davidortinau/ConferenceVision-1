@@ -113,10 +113,7 @@ namespace ConferenceVision.Views
 
         async void GoToSearchActivityAsync(object sender, System.EventArgs e)
         {
-            await Navigation.PushModalAsync(new HomeworkView()
-            {
-                MarkdownFile = "Activity_ImplementSearch.md"
-            }, true);
+            await Shell.Current.GoToAsync("//home/homework?content=Activity_ImplementSearch.md&sender=home");
         }
 
     }

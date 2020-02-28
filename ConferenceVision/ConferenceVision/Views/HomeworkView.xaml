@@ -6,6 +6,7 @@
              ios:Page.UseSafeArea="true"
              BackgroundColor="Black"
              BackgroundImage=""
+             Shell.PresentationMode="ModalAnimated"
              x:Class="ConferenceVision.Views.HomeworkView">
     <ContentPage.Content>
         <FlexLayout

@@ -34,7 +34,8 @@ namespace ConferenceVision.Views
 
 		async void Handle_InfoClicked(object sender, System.EventArgs e)
 		{
-			await Navigation.PushModalAsync(new HomeworkView() { MarkdownFile = "HowToGainAchievements.md" }, true);
+			//await Navigation.PushModalAsync(new HomeworkView() { MarkdownFile = "HowToGainAchievements.md" }, true);
+			await Shell.Current.GoToAsync("//achievements/homework?content=HowToGainAchievements.md&sender=achievements");
 		}
 	}
 }

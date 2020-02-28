@@ -29,7 +29,7 @@
                 <OnPlatform x:TypeArguments="Thickness"
                             Default="15,0">
                     <On Platform="Android"
-                        Value="15,50,15,0" />
+                        Value="15,0,15,0" />
                 </OnPlatform>
             </ScrollView.Margin>
 
